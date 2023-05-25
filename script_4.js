@@ -38,7 +38,7 @@ entrepreneurs.forEach(person => {
 
 console.log(array_peeps);
 
-// Q2
+// Q3
 console.log("Here's how old each person is / would be today.");
 const currentYear = new Date().getFullYear();
 entrepreneurs.forEach(person => {
@@ -46,3 +46,8 @@ entrepreneurs.forEach(person => {
   console.log(person.first + ' ' + person.last + " is / would be " + age + " years old.")
 })
 
+// Q4
+console.log("Here are the peeps sorted in alphabetical order by last name.");
+const sortedpeeps = entrepreneurs.sort((a, b) => a.last.localeCompare(b.last));
+
+console.log(sortedpeeps);
